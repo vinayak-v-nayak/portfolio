@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'Brush Script MT', cursive;
+    color:yellow;
+    background-color: black;
+    
+    }
+
+  /* New CSS for animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #greeting {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  @media screen and (max-width: 600px){
+    body{
+      font-size: 5rem;
+    }
+  }
+</style>
+<title>Greeting Page</title>
+</head>
+<body>
+<div id="greeting"></div>
+<script>
+  function getGreeting() {
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+
+    let greeting;
+
+    if (currentHour < 12) {
+      greeting = 'Good Morning';
+    } else if (currentHour < 18) {
+      greeting = 'Good Afternoon';
+    } else {
+      greeting = 'Good Evening';
+    }
+
+    return greeting;
+  }
+
+  const greetingDiv = document.getElementById('greeting');
+  const welcomeMessage = "Welcome to My Portfolio";
+
+  greetingDiv.textContent = getGreeting();
+
+  setTimeout(function() {
+    greetingDiv.textContent = `${welcomeMessage}`;
+  }, 3000); // Display welcome message after 3 seconds
+
+  setTimeout(function() {
+    window.location.href = 'vvn.html'; // Replace with your desired URL
+  }, 5000); // Redirect after 3 seconds (adjust as needed)
+</script>
+</body>
+</html>
