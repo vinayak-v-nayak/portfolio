@@ -525,7 +525,7 @@ color:#c26700;
     padding: 5rem;
     list-style: none;
     text-align: left;
-    width: 70%;
+    width: 90%;
 
 }
 
@@ -975,7 +975,7 @@ color:#c26700;
         position: relative;
         align-items: center;
         display: grid;
-        margin: 13rem;
+        margin: 5rem;
         grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
         grid-gap: 2.5rem;
         text-align: left;
