@@ -544,6 +544,7 @@ color:#c26700;
     margin-bottom:  1rem;
     padding-bottom: 1rem;
     position: relative;
+    padding-top: 2rem;	
 }
 
 .timeline .date:last-of-type{
