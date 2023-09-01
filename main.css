@@ -499,6 +499,17 @@ color:#c26700;
     margin-bottom: 0rem;
     
 }
+.resume{
+    display: inline-block;
+    background: #e1d6ca;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 40px;
+
+}
 
 .portfolio-description .cta{
     display: inline-block;
@@ -1447,7 +1458,4 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
-
-
-
 /*End media queries*/
