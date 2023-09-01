@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/7029b5dc88.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <header>
@@ -29,22 +28,17 @@
                 </li>
                 <li>
                     <a href="#services" class="nav-link">Education</a>
-
                 </li>
                 <li>
                     <a href="#portfolio" class="nav-link">Portfolio</a>
-
                 </li>
                 <li>
                     <a href="#experience" class="nav-link">Skills</a>
-
                 </li>
                 <li>
                     <a href="#contact" class="nav-link">Contact Me</a>
-
                 </li>
-               
-            </ul>
+             </ul>
         </nav>
         <div class="landing-text">
           <h1>Vinayaka V Nayak</h1>
@@ -61,9 +55,7 @@
         <div class="container">
             <div class="profile-img" >
                 <img src="images/24.jpg"  data-aos="fade-up" data-aos-delay="300ms">
-                
             </div>
-            
             <div class="about-details" data-aos="fade-up" data-aos-delay="300ms" >
                 <div class="about-heading">
                     <h1>About</h1>
@@ -78,9 +70,8 @@
                   
                     <br> 
                     <br>
-                    <a href="images/Resumeashwin.pdf.png" class="cta">Checkout my Resume</a>
-                  
-                </p>
+                    <a href="images/Resumeashwin.pdf.png" class="resume">Checkout my Resume</a>
+                 </p>
                 <br>
                 <address>Contact me here <p><i class="fas fa-paper-plane"></i> <a href="mailto:nayakvinayaka22@gmail.com" >nayakvinayaka22@gmail.com</a></p>
                     <p><i class="fas fa-phone-square-alt"></i><a href="tel:7349678879">7349678879</a></p>
@@ -106,38 +97,30 @@
                 </div>
                  
             </div>
-            
         </div>
     </section>
 <!--education-->
     <section class="services" id="services" >
-        
         <div class="container">
             <div class="section-heading" >
                 <h1>Education</h1>
                 <h6></h6>
             </div>
-          
-            <div class="my-skills" data-aos="fade-right" data-aos-delay="100ms">
+          <div class="my-skills" data-aos="fade-right" data-aos-delay="100ms">
                 <div class="skill"  data-date="" data-aos="fade-right" data-aos-delay="300ms">
-          
-                    <h3>St Joseph Engineering College</h3>
+                 <h3>St Joseph Engineering College</h3>
                     <p>
                         2021-2025 <br>
                         Computer Science and Business Systems
-                  
-                        
-                    </p>
+                   </p>
                     <br>
                     <a href="https://www.sjec.ac.in/" class="cta">Learn more</a>
                 </div>
                 <div class="skill" data-date="" data-aos="fade-right" data-aos-delay="600ms">
-                
                     <h3>Sri Bhuvanendra PU College</h3>
                     <p>
                         2019-2021 <br>
                         PCMB : 96.8 %
-
                     </p>
                     <br>
                     <a href="https://sribhuvanendra.org/" class="cta">Learn more</a>
@@ -268,9 +251,7 @@
                     <h6></h6>
                 </div>
                 <div class="row">
-                  
-                    <div class="contact-left">
-                       
+                  <div class="contact-left">
                         <p><i class="fas fa-paper-plane"></i> <a href="mailto:nayakvinayaka22@gmail.com" >nayakvinayaka22@gmail.com</a></p>
                         <p><i class="fas fa-phone-square-alt"></i><a href="tel:7349678879">7349678879</a></p>
                         <div class="social-icons" style="display: flex; justify-content: center;">
@@ -291,8 +272,6 @@
                 </div>
             </div>
     </section>
-
-   
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
@@ -300,15 +279,13 @@
         <p>&copy; 2023 Vinayak</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="main.js"></script>
 <!--google sheet connect-->
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwPOVbk9iorfQ_S4RadzM7wje_9Ji66ZF3PLaveToJXdb9OcFrg3cqhARdBk3dvtLV-JA/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7pHhaSqhrViMK1yov1VStxmBvLdnczmbY9MMNjHGapJjcT1koHu_td7t64EZBk-lz0A/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg =document.getElementById("msg");
-  
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -323,6 +300,4 @@
     })
   </script>
 </body>
-
-
 </html>
