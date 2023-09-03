@@ -5,7 +5,6 @@
 @font-face {font-family: "Gotham Medium"; src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot"); src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.svg#Gotham Medium") format("svg"); }/*Start global*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
-
 *{
     margin: 0;
     padding: 0;
@@ -234,15 +233,13 @@ li{
     bottom: 25%;
     font-family: "Poppins", sans-serif;
     position: relative;
-    margin-left: 700px;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
+    margin-left: 590px;
+   z-index: 1;
 
 }
 .landing-text h1{
     color: #fff;
-    font-size: 15em;
+    font-size: 109px;
     position: absolute;
     transform: translate(-50%, -50%);
 }
@@ -393,8 +390,8 @@ li{
 .box-container {
     flex:0.8;
     margin-right: 15rem; 
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     perspective: 1000px;
 }
 
@@ -408,8 +405,8 @@ li{
 
 .side {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: dodgerblue;
     border: 2px solid red;
     transform-style: preserve-3d;
@@ -805,17 +802,9 @@ color:#c26700;
     bottom: 25%;
     font-family: "Poppins", sans-serif;
     position: relative;
-    margin-left: 225px;
-    width: 100%;
+    margin-left: 250px;
     text-align: center;
-    z-index: 1;
 }
-    .landing-text h1{
-        font-size: 5rem;
-         position: absolute;
-    transform: translate(-50%, -50%);
-
-    }
 
     .nav-list{
         flex-direction: column;
