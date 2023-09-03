@@ -797,14 +797,6 @@ color:#c26700;
         border-radius: 100%;
          
         }
-.landing-text{
-      display: flex;
-    bottom: 25%;
-    font-family: "Poppins", sans-serif;
-    position: relative;
-    margin-left: 250px;
-    text-align: center;
-}
 
     .nav-list{
         flex-direction: column;
@@ -995,12 +987,16 @@ color:#c26700;
         bottom: 10rem;   
     }
     .landing-text{
-        display: flex;
+        display: inline-block;
+        left: 100px;
       bottom: 25%;
       font-family: "Poppins", sans-serif;
-      position: relative;
-      margin-left: 250px;
-      text-align: center;
+      margin-left: 100px;
+      
+  }
+  .landing-text h1{
+    text-align: center;
+    font-size: 70px;
   }
     .nav-link{
         font-size: 3.5rem;
