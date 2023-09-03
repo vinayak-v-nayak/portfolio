@@ -3,6 +3,7 @@
 
 @import url(//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium);
 @font-face {font-family: "Gotham Medium"; src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot"); src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.svg#Gotham Medium") format("svg"); }/*Start global*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 
 *{
@@ -229,30 +230,62 @@ li{
     transform: rotate(-450deg) translateX(-.8rem);
 }
 .landing-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    bottom: 25%;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    margin-left: 700px;
     width: 100%;
     text-align: center;
     z-index: 1;
 
 }
-
 .landing-text h1{
-    font-size: 20rem;
-    font-family:'Brush Script MT', cursive;
-    background: linear-gradient(#f0c800ce,#ff5a3dcb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 1rem;
-    user-select: none;
+    color: #fff;
+    font-size: 15em;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
-
-.landing-text h6{
-    font-size: 2.5rem;
-    font-weight: 300;
-}
+.landing-text h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+  }
+  
+  .landing-text h1:nth-child(2) {
+    color:red;
+    animation: animatee 4s ease-in-out infinite;
+  }
+  
+  @keyframes animatee {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
 
 .left-circ{
     position: relative;
@@ -264,9 +297,9 @@ li{
     animation-delay: 0s;
 }
 
-.landing-text .scrolldown{
+.scrolldown{
     position: absolute;
-    bottom: -20rem;
+    bottom: 10rem;
     left: 50%;
     width: 40px;
     height: 40px;
@@ -357,23 +390,68 @@ li{
     color: #0059ff;
 }
 
-.profile-img{
-    flex: .8;
-  margin-right: 15rem; 
-    /* border-radius: 50px; */
-    /* padding: 50px; */
-    transition: transform .2s; /* Animation */
-}
-.profile-img:hover{
-    /* background-color: aquamarine; */
-    /* border:5px inline red;   */
-    transform: scale(1.5);
- 
+.box-container {
+    flex:0.8;
+    margin-right: 15rem; 
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
 }
 
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: rotateBox 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.side {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: dodgerblue;
+    border: 2px solid red;
+    transform-style: preserve-3d;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+@keyframes rotateBox {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
 .about-details{
     flex: 1;
 }
+
 
 /*End about*/
 
@@ -722,14 +800,23 @@ color:#c26700;
         border-radius: 100%;
          
         }
-
+.landing-text{
+      display: flex;
+    bottom: 25%;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    margin-left: 225px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
     .landing-text h1{
-        font-size: 15rem;
+        font-size: 5rem;
+         position: absolute;
+    transform: translate(-50%, -50%);
 
     }
-    .landing-text h6{
-        font-size: 1.7rem;
-    }
+
     .nav-list{
         flex-direction: column;
     }
@@ -913,18 +1000,17 @@ color:#c26700;
         font-size: small;
     }
 
-    .landing-text .scrolldown{
+    .scrolldown{
         width: 30px;
-        height: 30px;    
+        height: 30px; 
+        bottom: 20rem;   
     }
 
     .landing-text h1{
-        font-size: 8rem;
+        font-size: 5rem;
 
     }
-    .landing-text h6{
-        font-size: 1.4rem;
-    }
+   
     .nav-link{
         font-size: 3.5rem;
     }
@@ -960,16 +1046,40 @@ color:#c26700;
         height: 70%;
         top: 5%
     }
-
+    .box-container {
+        flex:0.8;
+        margin-right: 10rem; 
+        width: 100%;
+        height: 200px;
+        perspective: 1000px;
+    }
+    .side {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: dodgerblue;
+        border: 2px solid red;
+        transform-style: preserve-3d;
+    }
+    
     .services-img{
         width: 22%;
         height: 15%;
         top: 110rem;
     }
-
-    .profile-img{
-        top: -10%;
-        margin: 0 0 7rem 0;
+    .side {
+       
+        top: -50%;
+        margin: 0 20px 7rem 20px;
+        width: 200px;
+        height: 200px;
+        background-color: dodgerblue;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        font-size: 24px;
+        border: 1px solid #333;
+        transform-style: preserve-3d;
     }
     
     .skills-img{
