@@ -992,14 +992,16 @@ color:#c26700;
     .scrolldown{
         width: 30px;
         height: 30px; 
-        bottom: 20rem;   
+        bottom: 10rem;   
     }
-
-    .landing-text h1{
-        font-size: 5rem;
-
-    }
-   
+    .landing-text{
+        display: flex;
+      bottom: 25%;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      margin-left: 250px;
+      text-align: center;
+  }
     .nav-link{
         font-size: 3.5rem;
     }
