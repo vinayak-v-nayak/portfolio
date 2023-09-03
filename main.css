@@ -108,6 +108,13 @@ img{
 .has-margin-right{
     margin-right: 5rem;
 }
+.portfolio-img{
+    transition: transform .2s;
+}
+.portfolio-img:hover{
+     transform: scale(1.3);
+
+}
 .has-margin-left{
     margin-left: 5rem;
 }
@@ -143,8 +150,19 @@ header{
 li{
     margin: 0 2rem;
 }
-
-
+.resume{
+    display: inline-block;
+    background: #e1d6ca;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 120px;
+}
+.resume:hover{
+    background-color:#a6b547;
+}
 .nav-link{
     font-family: 'The Historia Demo' ;   
     font-size: 5rem;
@@ -335,49 +353,26 @@ li{
     font-weight: 400;
     color: white;
 }
-
 .about-details a:hover{
     color: #0059ff;
 }
 
 .profile-img{
     flex: .8;
-    margin-right: 10rem;
-    border-radius: 10px;
+  margin-right: 15rem; 
+    /* border-radius: 50px; */
+    /* padding: 50px; */
+    transition: transform .2s; /* Animation */
+}
+.profile-img:hover{
+    /* background-color: aquamarine; */
+    /* border:5px inline red;   */
+    transform: scale(1.5);
+ 
 }
 
 .about-details{
     flex: 1;
-}
-
-.social-media{
-    margin-top: 5rem;
-}
-
-.social-media i{
-    font-size: 5rem;
-    transition: color 650ms;
-}
-
-.fa-medium:hover{
-    color: #ffffff;
-}
-
-.fa-github-square:hover{
-    color: #ffffff;
-}
-
-.fa-linkedin:hover{
-    color: #ffffff ;
-}
-
-
-.fa-twitter-square:hover{
-    color: #ffffff ;
-}
-
-.fa-behance-square:hover{
-    color: #ffffff ;
 }
 
 /*End about*/
@@ -482,6 +477,7 @@ color:#c26700;
 }
 
 .portfolio-description{
+    margin-left:5rem;
     flex: 1;
     font-size: 4rem;
 }
@@ -499,23 +495,14 @@ color:#c26700;
     margin-bottom: 0rem;
     
 }
-.resume{
-    display: inline-block;
-    background: #e1d6ca;
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 50px;
-    margin-left: 40px;
 
-}
 
 .portfolio-description .cta{
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
+    /* border: 2px solid green; */
     color: #2e89ff;
 }
 
@@ -951,7 +938,14 @@ color:#c26700;
         font-weight: 300;
         color: white;
     }
-   
+   .resume{
+    display: inline-block;
+    background: #e1d6ca;
+    padding: 10px 40px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+   }
  
     .about .container{
         display: list-item;       
@@ -987,7 +981,7 @@ color:#c26700;
         position: relative;
         align-items: center;
         display: grid;
-        margin: 5rem;
+        margin: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
         grid-gap: 2.5rem;
         text-align: left;
@@ -1007,8 +1001,6 @@ color:#c26700;
         margin: -1.5rem 1px 1rem 2rem;
     
     }
-  
-    
     .my-skills .skill{
         border-right: none;
         margin-right:  1rem;
@@ -1066,7 +1058,6 @@ color:#c26700;
     .my-skills a:hover{
         color:#c26700;
     }
-
     .portfolio-item{
         flex-direction: column;
     }
@@ -1133,22 +1124,11 @@ color:#c26700;
         right: 2rem;
 
     }
-
-    .social-media{
-        margin-top: 5rem;
-    }
-    
-    .social-media i{
-        font-size: 4.5rem;
-        transition: color 650ms;
-    }
     address { 
         display: block;
         font-style: normal;
         font-size: 1.5rem;
       } 
-    
-
 }
 
 .header-text{
@@ -1353,30 +1333,14 @@ color:#c26700;
     flex-basis: 55%;
 }
 .contact-left p{
-    margin-top: 20px;   
+    margin-top: 20px;  
 }
 .contact-left p i{
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
-  margin-top: 30px;
-    margin-bottom: 20px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
 
-}
-.social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
-}
 .fa-brands, .fab {
     font-weight: 400;
     font-size: 50px;
@@ -1389,23 +1353,106 @@ color:#c26700;
     width:100% ;
 
 }
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn.btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+ .contact-right {
+            width: 500px;
+            padding: 10px;
+            position: relative;
+            background: black;
+            text-align: center;
+            transition: 0.25s;
+        }
+        .contact-right input[type="text"],
+        .contact-right input[type="email"],
+        .contact-right textarea {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 15px;
+            width: 100%;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .contact-right input[type="text"]:focus,
+        .contact-right input[type="email"]:focus,
+        .contact-right textarea:focus {
+            width: 300px;
+            border-color: #2ecc71;
+        }
+        .contact-right button[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .contact-right button[type="submit"]:hover {
+            background: #2ecc71;
+        }
+        ul.social-network {
+            list-style: none;
+            display: inline;
+            margin-left: 0 !important;
+            padding: 50px 0px 0px 0px;
+        }
+        ul.social-network li {
+            padding-left:10px;
+            display: inline;
+            margin: 0 5px;
+        }
+        .social-network a.icogit:hover {
+            background-color: #0059ff;
+        }
+        .social-network a.icoinsta:hover {
+            background-color: #0059ff;
+        }
+        .social-network a.icolinkdin:hover {
+            background-color:#0059ff;
+        }
+        .social-network a.icogit:hover i,
+        .social-network a.icoinsta:hover i,
+        .social-network a.icolinkdin:hover i {
+            color: #fff;
+        }
+        a.socialIcon:hover,
+        .socialHoverClass {
+            color: #44BCDD;
+        }
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            border-radius: 50%;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .social-circle li i {
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+        }
+        .social-circle li a:hover i,
+        .triggeredHover {
+            transform: rotate(360deg);
+            transition: all 0.2s;
+        }
+        .social-circle i {
+            color: #fff;
+            transition: all 0.8s;
+        }
 .copyright{
     width: 100%;
     text-align: center;
@@ -1421,6 +1468,7 @@ form .btn.btn2{
 nav .fas{
     display: none;
 }
+
 @media only screen and (max-width: 600px){
     .header-text{
         margin-top: 100%;
@@ -1454,8 +1502,11 @@ nav .fas{
     }
 }
 #msg{
-    color:#61b752 ;
-    margin-top: -40px;
+    color:greenyellow;
+    margin-top: 5px;
     display: block;
 }
+
+
+
 /*End media queries*/
