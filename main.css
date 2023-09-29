@@ -780,7 +780,10 @@ color:#c26700;
         border-radius: 100%;
          
         }
-
+    .animate-charcter{
+        margin-top: -100px;
+        font-size: 70px;
+    }
     .nav-list{
         flex-direction: column;
     }
